@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Perfect Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- 1st -->
+    <div class="navbar-container w-100" id="the">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/icon-deal.png" alt="Makaan" style="height: 40px;"><a style="color: #1CB193; font-weight: bolder; font-size: 40px;">Makaan</a>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#" style="font-weight: bolder;">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="font-weight: bolder;">ABOUT</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="propertyDropdown" role="button" data-bs-toggle="dropdown" style="font-weight: bolder;">
+                                PROPERTY
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" style="font-weight: bolder;">Buy</a></li>
+                                <li><a class="dropdown-item" href="#" style="font-weight: bolder;">Rent</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="font-weight: bolder;">PAGES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="font-weight: bolder;">CONTACT</a></li>
+                    </ul>
+                    <a href="#" class="btn add-property-btn ms-3" style="font-weight: bolder;">Add Property</a>
+                </div>
+            </div>
+        </nav>
+     
+    </div>
+    <div class="container-fluid mt-0">
+        <div class="banner row">
+            <!-- Text Section -->
+            <div class="col-md-6 banner-text" style="padding: 60px;">
+                <h1 style="font-weight: bolder;">Find A <span style="color: #16a085;">Perfect Home</span> To <br>Live With Your Family</h1>
+                <p style="font-weight: bolder; color: black;"> Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum
+                    <br> et diam justo clita et kasd rebum sea elitr.</p>
+                <button class="btn btn-success" style="font-weight: bolder;">Get Started</button>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 banner-images">
+                <img src="images/carousel-1.jpg" alt="House with swimming pool">
+                <img src="images/carousel-2.jpg" alt="House with yellow facade">
+            </div>
+        </div>
+    </div>
+  <!-- 2nd   -->
+  <div class="container-fluid my-5" id="t1">
+    <div class="search-bar bg-success text-light p-4 rounded">
+        <form class="d-flex align-items-center justify-content-center flex-wrap g-3" id="searchForm">
+            <div class="me-3 mb-3">
+                <input type="text" id="keyword" class="form-control" placeholder="Enter keyword">
+            </div>
+            <div class="me-3 mb-3">
+                <select id="propertyType" class="form-select">
+                    <option value="">Choose...</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="land">Land</option>
+                </select>
+            </div>
+            <div class="me-3 mb-3">
+                <select id="location" class="form-select">
+                    <option value="">Choose a location...</option>
+                    <option value="new-york">New York</option>
+                    <option value="london">London</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="paris">Paris</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-dark px-4" style="font-weight: bolder;">Search</button>
+            </div>
+        </form>
+    </div>
+</div>  
+
+<!-- 3rd -->
+  <div class="section" id="three">
+    <h1 style="font-weight: bolder;">Property Types</h1>
+    <p style="color: black;">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd<br>
+         vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+</div>
+
+<!-- 4th -->
+<!-- Property Cards Section -->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-apartment.png" alt="Apartment">
+                    </div>
+                    <h5 style="font-weight: bolder;">Apartment</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>  
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-villa.png" alt="Villa">
+                    </div>
+                    <h5 style="font-weight: bolder;">Villa</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-house.png" alt="Home">
+                    </div>
+                    <h5 style="font-weight: bolder;">Home</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-housing.png" alt="Office">
+                    </div>
+                    <h5 style="font-weight: bolder;">Office</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-building.png" alt="Building">
+                    </div>
+                    <h5 style="font-weight: bolder;">Building</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-neighborhood.png" alt="Townhouse">
+                    </div>
+                    <h5 style="font-weight: bolder;">Townhouse</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-condominium.png" alt="Shop">
+                    </div>
+                    <h5 style="font-weight: bolder;">Shop</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="property-card-container">
+                <div class="property-card">
+                    <div class="property-icon">
+                        <img src="images/icon-luxury.png" alt="Garage">
+                    </div>
+                    <h5 style="font-weight: bolder;">Garage</h5>
+                    <p style="font-weight: bolder;">123 Properties</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 5th -->
+<div class="container promo-container d-flex flex-wrap">
+    <!-- Left Section -->
+    <div class="col-md-6 promo-left">
+        <img src="images/about.jpg" alt="House with Pool">
+    </div>
+    <!-- Right Section -->
+    <div class="col-md-6 promo-right">
+        <h1 class="promo-title">#1 Place To Find The Perfect Property</h1>
+        <p class="promo-description" style="font-weight: bolder;">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+        </p>
+        <ul class="promo-list1">
+            <li style="font-weight: bolder;"><span class="tick">&#10003;</span> Tempor erat elitr rebum at clita</li>
+            <li style="font-weight: bolder;"><span class="tick">&#10003;</span> Aliqu diam amet diam et eos</li>
+            <li style="font-weight: bolder;"><span class="tick">&#10003;</span> Clita duo justo magna dolore erat amet</li>
+        </ul>
+        <a href="#" class="btn promo-button1 mt-3" style="font-weight: bolder;">Read More</a>
+    </div>
+</div>
+<!-- 6th -->
+<div class="container p-container">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h2 class="p-title" style="text-align: start; font-weight: bold;">Property Listing</h2>
+            <p class="p-description " style="text-align: start;font-weight: bold;color: black; ">
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore<br>
+                 lorem kasd vero ipsum sit eirmod sit diam justo sed rebum.
+            </p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <button class="btn btn-custom1 btn-featured" style="font-weight: bolder;">Featured</button>
+            <button class="btn btn-custom1 btn-outline" style="font-weight: bolder;">For Sell</button>
+            <button class="btn btn-custom1 btn-outline" style="font-weight: bolder;">For Rent</button>
+        </div>
+    </div>
+</div>
+<!-- 7th -->
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- product card1 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="pro-card position-relative">
+                <img src="images/property-1.jpg" alt="House">
+                <span class="pro-label" style="font-weight: bolder;">For Sell</span>
+                <span class="pro-type" style="font-weight: bolder;">Apartment</span>
+                <div class="pro-content">
+                    <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                    <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                    <p class="pro-location" style="font-weight: bolder;">123 Street, New York, USA</p>
+                </div>
+                <div class="pro-details">
+                    <span style="font-weight: bolder;">1000 Sqft</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bed" ></i> 3 Bed</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bath" ></i> 2 Bath</span>
+                </div>
+            </div>
+        </div>
+        <!-- product card2 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="pro-card position-relative">
+                <img src="images/property-2.jpg" alt="House">
+                <span class="pro-label" style="font-weight: bolder;">For Rent</span>
+                <span class="pro-type" style="font-weight: bolder;">Villa</span>
+                <div class="pro-content">
+                    <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                    <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                    <p class="pro-location" style="font-weight: bolder;"><i class="fas fa-map-marker-alt" ></i> 123 Street, New York, USA</p>
+                </div>
+                <div class="pro-details">
+                    <span style="font-weight: bolder;"><i class="fas fa-ruler-combined"></i> 1000 Sqft</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bed"></i> 3 Bed</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bath"></i> 2 Bath</span>
+                </div>
+            </div>
+        </div>
+    <!-- product card3 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="pro-card position-relative">
+            <img src="images/property-3.jpg" alt="House">
+            <span class="pro-label" style="font-weight: bolder;">For Sell</span>
+            <span class="pro-type" style="font-weight: bolder;">Office</span>
+            <div class="pro-content">
+                <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                <p class="pro-location" style="font-weight: bolder;"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+            </div>
+            <div class="pro-details">
+                <span style="font-weight: bolder;"><i class="fas fa-ruler-combined"></i> 1000 Sqft</span>
+                <span style="font-weight: bolder;"><i class="fas fa-bed"></i> 3 Bed</span>
+                <span style="font-weight: bolder;"><i class="fas fa-bath"></i> 2 Bath</span>
+            </div>
+        </div>
+    </div>
+     </div>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- product card4-->
+        <div class="col-md-4 col-sm-6">
+            <div class="pro-card position-relative">
+                <img src="images/property-4.jpg" alt="House">
+                <span class="pro-label" style="font-weight: bolder;">For Rent</span>
+                <span class="pro-type" style="font-weight: bolder;">Apartment</span>
+                <div class="pro-content">
+                    <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                    <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                    <p class="pro-location" style="font-weight: bolder;"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                </div>
+                <div class="pro-details">
+                    <span style="font-weight: bolder;"><i class="fas fa-ruler-combined"></i> 1000 Sqft</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bed"></i> 3 Bed</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bath"></i> 2 Bath</span>
+                </div>
+            </div>
+        </div>
+        <!-- product card5 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="pro-card position-relative">
+                <img src="images/property-5.jpg" alt="House">
+                <span class="pro-label" style="font-weight: bolder;">For Sell</span>
+                <span class="pro-type" style="font-weight: bolder;">Building</span>
+                <div class="pro-content">
+                    <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                    <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                    <p class="pro-location" style="font-weight: bolder;"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                </div>
+                <div class="pro-details">
+                    <span style="font-weight: bolder;"><i class="fas fa-ruler-combined"></i> 1000 Sqft</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bed"></i> 3 Bed</span>
+                    <span style="font-weight: bolder;"><i class="fas fa-bath"></i> 2 Bath</span>
+                </div>
+            </div>
+        </div>
+    <!-- product card6 -->
+    <div class="col-md-4 col-sm-6">
+        <div class="pro-card position-relative">
+            <img src="images/property-6.jpg" alt="House">
+            <span class="pro-label" style="font-weight: bolder;">For Rent</span>
+            <span class="pro-type" style="font-weight: bolder;">Home</span>
+            <div class="pro-content">
+                <p class="pro-price" style="font-weight: bolder;">$12,345</p>
+                <h3 class="pro-title" style="font-weight: bolder;">Golden Urban House For Sell</h3>
+                <p class="pro-location" style="font-weight: bolder;"><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+            </div>
+            <div class="pro-details">
+                <span style="font-weight: bolder;"><i class="fas fa-ruler-combined"></i> 1000 Sqft</span>
+                <span style="font-weight: bolder;"><i class="fas fa-bed"></i> 3 Bed</span>
+                <span style="font-weight: bolder;"><i class="fas fa-bath"></i> 2 Bath</span>
+            </div>
+        </div>
+    </div>
+     </div>
+</div>
+<!-- 8th -->
+<div class="container mt-5">
+    <div class="container contact-section">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <img src="images/call-to-action.jpg" alt="Agent Image" class="agent-img">
+            </div>
+            <div class="col-md-7 d-flex flex-column justify-content-center">
+                <h2 style="font-weight: bolder; font-size: 40px;">Contact With Our <br>Certified Agent</h2>
+                <p style="font-weight: bold;">Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-success btn-custom"><img src="images/icons8-phone-24.png" /> Make A Call</button>
+                    <button class="btn btn-dark btn-custom"><img src="images/icons8-calendar-24.png" /> Get Appointment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 9th -->
+<div class="section11" id="three11">
+    <br><br><h2 style="font-weight: bolder;">Property Agents</h2>
+     <p style="font-weight: bolder; color: black;">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd 
+        <br>vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+</div>
+<!-- 10th -->
+<div class="container team-section">
+    <div class="row g-4">
+        <!-- Team Member 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="team-card">
+                <img src="images/team-1.jpg" alt="Team Member">
+                <div class="team-info">
+                    <h3 style="font-weight: bolder;">Full Name</h3>
+                    <p style="font-weight: bolder;">Designation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="team-card">
+                <img src="images/team-2.jpg" alt="Team Member">
+                <div class="team-info" >
+                   <h3 style="font-weight: bolder;">Full Name</h3>
+                    <p style="font-weight: bolder;">Designation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="team-card">
+                <img src="images/team-3.jpg" alt="Team Member">
+                <div class="team-info">
+                    <h3 style="font-weight: bolder;">Full Name</h3>
+                    <p style="font-weight: bolder;">Designation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="team-card">
+                <img src="images/team-4.jpg" alt="Team Member">
+                <div class="team-info">
+                    <h3 style="font-weight: bolder;">Full Name</h3>
+                    <p style="font-weight: bolder;">Designation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 11th -->
+<div class="lav" id="lav11">
+    <br><br><br><h2 style="font-weight: bolder;">Our Clients Say!</h2>
+     <p style="font-weight: bolder; color: black;">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd 
+        <br>vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+</div>
+<!-- 12th -->
+
+<div class="container testimonial-section">
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+        <img src="images/testimonial-1.jpg" alt="Client" class="testimonial-img">
+        <div class="testimonial-text">
+            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos.</p>
+            <span class="client-name">Client Name</span><br>
+            <span class="client-profession">Profession</span>
+        </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+        <img src="images/testimonial-2.jpg" alt="Client" class="testimonial-img">
+        <div class="testimonial-text">
+            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos.</p>
+            <span class="client-name">Client Name</span><br>
+            <span class="client-profession">Profession</span>
+        </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+        <img src="images/testimonial-3.jpg" alt="Client" class="testimonial-img">
+        <div class="testimonial-text">
+            <p >Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos.</p>
+            <span class="client-name">Client Name</span><br>
+            <span class="client-profession">Profession</span>
+        </div>
+    </div>
+</div>
+<!-- 13thh -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 style="font-weight: bolder;">Get In Touch</h5><br>
+                <p style="font-weight: bolder;"><i class="bi bi-geo-alt-fill"></i> 123 Street, New York, USA</p>
+                <p style="font-weight: bolder;"><i class="bi bi-telephone-fill"></i> +012 345 67890</p>
+                <p style="font-weight: bolder;"><i class="bi bi-envelope-fill"></i> info@example.com</p>
+            </div>
+            <div class="col-md-3">
+                <h5 style="font-weight: bolder;">Quick Links</h5><br>
+                <p><a href="#" style="font-weight: bolder;">About Us</a></p>
+                <p><a href="#" style="font-weight: bolder;">Contact Us</a></p>
+                <p><a href="#" style="font-weight: bolder;">Our Services</a></p>
+                <p><a href="#" style="font-weight: bolder;">Privacy Policy</a></p>
+                <p><a href="#" style="font-weight: bolder;">Terms & Conditions</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5 style="font-weight: bolder;">Photo Gallery</h5><br>
+                <div class="photo-gallery">
+                    <img src="images/property-1.jpg" alt="Gallery">
+                    <img src="images/property-2.jpg" alt="Gallery">
+                    <img src="images/property-3.jpg" alt="Gallery">
+                    <img src="images/property-4.jpg" alt="Gallery">
+                    <img src="images/property-5.jpg" alt="Gallery">
+                    <img src="images/property-6.jpg" alt="Gallery">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5 style="font-weight: bolder;">Newsletter</h5><br>
+                <p style="font-weight: bold;">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your email">
+                    <button class="btn btn-success">SignUp</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p style="font-weight: bolder;">&copy; Your Site Name. All Rights Reserved. Designed by <a href="#">HTML Codex</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- scroll bar -->
+ <!-- Scroll to Top Button -->
+ <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+ <!-- JavaScript -->
+ <script>    
+     // Show or hide the button
+     window.onscroll = function() {
+         let btn = document.getElementById("scrollTopBtn");
+         if (document.documentElement.scrollTop > 200) {
+             btn.style.display = "block";
+         } else {
+             btn.style.display = "none";
+         }
+     };
+
+     // Scroll to top function
+     function scrollToTop() {
+         window.scrollTo({ top: 0, behavior: "smooth" });
+     }
+ </script>
+</body>
+</html>
